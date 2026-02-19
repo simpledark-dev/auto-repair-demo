@@ -1,6 +1,6 @@
-# Quiroz Auto Heroes - Premium Landing Page
+# Auto Repair - Premium Landing Page
 
-A modern, fully responsive landing page for Quiroz Auto Heroes auto repair shop.
+A modern, fully responsive landing page for auto repair shops.
 
 ## Features
 
@@ -49,48 +49,12 @@ A modern, fully responsive landing page for Quiroz Auto Heroes auto repair shop.
 8. **Contact** - Contact cards and embedded Google Map
 9. **Footer** - Business info, hours, and quick links
 
-## Contact Information
-
-- **Address**: 201 W North Ave, Unit 201, Villa Park, IL 60181
-- **Phone**: (630) 276-0478
-- **Email**: quirozautoheroes@gmail.com
-
-## Opening Hours
-
-- Monday - Friday: 7:30am - 5:30pm
-- Saturday: 7:30am - 2:30pm
-- Sunday: Closed
-
-## Development
-
-Navigate to the page at `/quiroz-auto-heroes` when running the development server.
-
-## File Structure
-
-```
-app/quiroz-auto-heroes/
-├── components/
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── About.tsx
-│   ├── Services.tsx
-│   ├── Mechanic.tsx
-│   ├── Testimonials.tsx
-│   ├── Gallery.tsx
-│   ├── Contact.tsx
-│   └── Footer.tsx
-├── layout.tsx
-├── page.tsx
-└── README.md
-```
-
 ## Animations
 
 All sections use intersection observer for scroll-triggered animations:
 - Fade in with 16px upward translation
 - 400ms duration with ease-out timing
 - Respects `prefers-reduced-motion` setting
-# quiroz-auto-heroes
 # auto-repair-demo
 # auto-repair-demo
 # auto-repair-demo
