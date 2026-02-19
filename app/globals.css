@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --qah-primary: #5c1515;
+  --qah-accent: #a82222;
+  --qah-accent-hover: #dc2626;
+
+  /* Dark section backgrounds */
+  --qah-light: #0f0505;
+  --qah-card: #1e0a0a;
+
+  /* Text on dark backgrounds */
+  --qah-white: #ffffff;
+  --qah-dark: #fee2e2;
+
+  /* Light section backgrounds */
+  --qah-section-light: #fff5f5;
+
+  /* Text on light backgrounds */
+  --qah-text-heading: #18060a;
+  --qah-text-body: #7c3535;
+}
+
+/* Scroll animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 400ms ease-out forwards;
+}
+
+/* Galaxy shimmer animation */
+@keyframes galaxyShimmer {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+/* Glow pulse animation */
+@keyframes cosmicPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(232, 145, 42, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(232, 145, 42, 0.5);
+  }
+}
+
+/* Bounce animation for promotion flyer */
+@keyframes bounceFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-float {
+  animation: bounceFloat 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Animated border glow effect */
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-glow {
+  position: relative;
+  background: linear-gradient(90deg, #f59e0b, #ffffff, #60a5fa, #ffffff, #f59e0b);
+  background-size: 400% 100%;
+  animation: borderGlow 2s linear infinite;
+  padding: 3px;
+  border-radius: 9999px;
+}
+
+.animate-border-glow-inner {
+  background: #f59e0b;
+  border-radius: 9999px;
+  padding: 0.375rem 1rem;
+  display: block;
+}
+
+/* Solid background for dark sections — change --qah-light in :root to update all at once */
+.bg-stars {
+  background-color: var(--qah-light);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 75% 35%, rgba(127, 29, 29, 0.6) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 50% at 15% 80%, rgba(239, 68, 68, 0.2) 0%, transparent 60%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-bounce-float {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
